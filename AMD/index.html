@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>AMD模块化require requirejs define</p>
+	<script src="libs/require.js"></script>
+	<script>
+		requirejs(["model/randomColor","model/randomNum","libs/jquery-1.11.3"],function(color,num){
+			console.log(color);
+			console.log(num);
+			console.log(jQuery);
+			$("p").css({
+				color:color
+			}).html($("p").html()+num);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>AMD 模块化 依赖加载</p>
+	<script src="libs/require.js"></script>
+	<script>
+		require(["module/randomColor","libs/jquery-1.11.3"],function(color){
+			console.log(color);
+			console.log(color.randomNum());
+			console.log(color.color());
+			$("p").css({
+				width:200,
+				height:200,
+				border:"1px solid red",
+				"font-size":50,
+				color:color.color(),
+				background:color.color()
+			});
+		});
+	</script>
+</body>
+</html>
