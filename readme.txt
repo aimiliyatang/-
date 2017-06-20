@@ -31,5 +31,5 @@ git commit 放进版本库中
 3.上传到服务器
 git remote add origin https://github.com/aimiliyatang/test.git  连接到服务器
 
-git push -u origin master //发送到服务器
+git push -u origin master //发送到服务器 。。
 
