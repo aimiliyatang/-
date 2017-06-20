@@ -27,3 +27,9 @@ git commit 放进版本库中
 版本退回 git reset --hard 版本号   //git reset --hard HEAD^退回很多个版本
 
 查看版本不同 git diff
+
+3.上传到服务器
+git remote add origin https://github.com/aimiliyatang/test.git  连接到服务器
+
+git push -u origin master //发送到服务器
+
